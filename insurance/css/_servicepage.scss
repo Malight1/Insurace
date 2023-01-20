@@ -1,0 +1,85 @@
+.services-page{
+    padding:100px 10%;
+    h3{
+        color:var(--orange);
+    }
+    .h1{
+        color:var(--blu);
+    
+    }
+    .sub-h{
+        color: var(--orange);
+        margin-top: 60px;
+        border-left: 3px solid var(--blu);
+        padding-left: 10px;
+    }
+    .laah{
+        .card{
+            .text-h{
+                .text{
+                        .icon{
+                            display: none;
+                        }
+                }
+            }
+        }
+    }
+    .services-card-hh{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px , 1fr));
+        gap: 15px;
+        .card{
+            // width: 300px;
+            height:250px;
+            background: whitesmoke;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(165, 165, 165, 0.407);
+            overflow: hidden;
+            .img-h{
+                height:70%;
+                background: white;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .text-h{
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                height:30%;
+                .text{
+                    position: relative;
+                    color: var(--blu);
+                    width: 100%;
+                    text-transform: capitalize;
+                    div{
+                        width:50px;
+                        padding:2px;
+                        background: var(--orange);
+                        margin-bottom: 10px;
+                    }
+                    .icon{
+                        position: absolute;
+                        top: 0;
+                        right:0;
+                        box-shadow: 0 6px 10px rgba(105, 103, 103, 0.407);
+                        width: 45px;
+                        height:45px;
+                        margin-top: -45px;
+                        border-radius: 5px;
+                        background: whitesmoke;
+                        display: flex;;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 18px;
+                        color:var(--orange);
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

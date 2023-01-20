@@ -1,0 +1,27 @@
+.service-page{
+    text-align: center;
+
+    .card-container{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        gap:20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        
+    }
+    a{
+        cursor: pointer;
+        button{
+            margin-top: 50px ;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            padding:15px 52px;
+            border: none;
+            background-color: var(--blu);
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+}

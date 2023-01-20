@@ -1,0 +1,35 @@
+.c-card{
+    padding: 25px;
+    transition: ease-in-out 0.5s;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(145, 145, 145, 0.4);
+    .icon{
+        width:80px;
+        height:80px;
+        border-radius: 50%;
+        background: var(--bg-grey);
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            font-size: 40px;
+            color: var(--l-blu);
+        }
+    }
+    h3{
+        margin:15px 0;
+        color: var(--l-blu);
+        text-transform: capitalize;
+    }
+    p{
+        font-size: 15px;
+        line-height: 25px;
+        color: var(--grey);
+    }
+    &:hover{
+        box-shadow: 0 3px 5px rgba(145, 145, 145, 0.4);
+        transform: scale(103%);
+    }
+}

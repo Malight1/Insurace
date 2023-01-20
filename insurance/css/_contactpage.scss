@@ -1,0 +1,135 @@
+.contact{
+    min-height: 100vh;
+    width: 100%;
+    background: var(--l-blu);
+    padding:100px 10%;
+    h1{
+        text-align: center;
+        color: var(--orange);
+    }
+    h4{
+        text-align: center;
+        margin-top: 10px;
+        color: var(--l-grey);
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+
+        form{
+            background: var(--bg-grey);
+            margin-top: 50px;
+            border-radius: 20px;
+            padding:30px;
+
+            .inputs{
+                display: flex;
+                .inp{
+                    .input-h{
+                        width:310px;
+                        margin-bottom: 20px;
+                        label{
+                            color: var(--orange);
+                            font-weight: bold;
+                            font-size: 14px;
+                        }
+                        .input-i{
+                            margin-top: 5px;
+                            display: flex;
+                            border: 3px solid var(--l-grey);
+                            i{
+                                width: 40px;
+                                height:35px;
+                                display: flex;
+                                align-items: center;justify-content: center;
+                            }
+                            border-radius: 8px;
+                            input{
+                                height:35px;
+                                width: calc(100% - 35px);
+                                border: none;
+                                background: transparent;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+                .message{
+                    margin-left: 30px;
+                    .label,textarea{
+                        display: block;
+                    }
+                    label{
+                        color: var(--orange);
+                        font-weight: bold;
+                        font-size: 14px;
+                    }
+                    textarea{
+                        margin-top: 5px;
+                        border: none;
+                        background: rgb(236, 234, 234);
+                        font-weight: 600;
+                        border-radius: 8px;
+                        height:220px;
+                        padding:10px;
+                        resize: none;
+                        width:310px;
+                    }
+                }   
+            }
+            button{
+                margin: 20px auto;
+                font-size: 17px;
+                padding: 12px 32px;
+                color: var(--bg-grey);
+                background: var(--orange);
+                border: none;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 750px) {
+    .contact{
+        .form{
+            form{
+                width:80%;
+                .inputs{
+                    display: block;
+                    .inp{
+                        .input-h{
+                            width:100%;
+                        }
+                    }
+                    .message{
+                        margin: 0;
+                        textarea{
+                            width:100%;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .contact{
+        .form{
+            padding:0;
+            form{
+                width:inherit;
+                .inputs{
+                    display: block;
+                    .inp{
+                        .input-h{
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

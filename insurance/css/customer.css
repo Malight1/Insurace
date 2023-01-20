@@ -1,0 +1,85 @@
+.customers-section{
+    padding:130px 10%;
+    text-align: center;
+    background: var(--bg-grey);
+}
+
+.customer-card-h{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    overflow-x: scroll;
+    gap: 10px;
+}
+@media screen and (max-width: 700px) {
+    .customer-card-h{
+        display: block;
+        margin: auto;
+
+    }
+    .customer-card-h .card{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .profile img{
+        width:50px;
+        height: 50px;
+    }
+    .profile div h3{
+        font-size: 18px;
+        color:#333333;
+    }
+    .profile div p{
+        font-size: 13px;
+        color:#666464;
+    }
+}
+.customer-card-h .card{
+    display:block;
+    width: 300px;
+    text-align: left;
+    z-index: 2;
+
+}
+.speech{
+    background: white;
+    padding:30px 15px;
+    line-height: 20px;
+    color: #666464;
+    border-radius: 5px;
+    position: relative;
+    box-shadow:0 8px 10px rgba(219, 217, 217, 0.5);
+}
+.customer-card-h .card span{
+    box-shadow:0 8px 10px rgba(219, 217, 217, 0.5);
+    width:30px;
+    height:30px;
+    background: white;
+    z-index: -1;
+    position: absolute;
+    margin-left:13px;
+    bottom: 0;
+    margin-bottom: -13px;
+    transform: rotate(45deg);
+}
+.profile{
+    margin-top: 30px;
+    display:flex;
+    align-items: center;
+}
+.profile img{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    background:#f5f5f5;
+    margin-right:15px;
+}
+.profile div h3{
+    font-size: 25px;
+    color:#333333;
+}
+.profile div p{
+    font-size: 15px;
+    color:#666464;
+}

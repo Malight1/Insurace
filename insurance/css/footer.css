@@ -1,0 +1,126 @@
+/* .footer-section{
+    width: 100vw;
+} */
+.footer-section .company{
+    /* min-height: 55vh; */
+    width: 100%;
+    padding:50px 6%;
+    background: var(--blu);
+    position:relative;
+    color: white;
+    display:flex
+   
+}
+.footer-section .company .div{
+    padding:15px;
+    width:25%
+}
+.footer-section .company .company-d h5{
+    margin-bottom: 10px;
+}
+.footer-section .company .company-d a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.footer-section .company h5{
+    font-weight: 400;
+}
+
+.footer-section .company .about p{
+    color: rgb(189, 186, 186);
+    font-weight:500;
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.footer-section .company .info p{
+    color: rgb(189, 186, 186);
+    font-weight:500;
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.footer-section .company .info div  p{
+    display:flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 0.5px solid rgba(36, 36, 36, 0.5);
+}
+.footer-section .company .info p i{
+    margin-right:4px
+}
+.copyright{
+    /* font-size: 12px; */
+    padding:20px 0;
+    color:rgb(209, 208, 208);
+}
+.copyright h5{
+    font-size:11px;
+    font-weight: 200;
+}
+
+.follow{
+    background: var(--green);
+    color:var(--whitesmoke);
+    padding:6px 15px;
+    width:185px;
+    /* border-radius: 5px; */
+    position:absolute;
+    display:flex;
+    align-items: center;
+    top: 0;
+    margin-top: -18px;
+    box-shadow: 0 6px 8px rgba(41, 41, 41, 0.4);
+}
+.follow i{
+    padding:5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border: 1px solid var(--whitesmoke);
+    height:30px;
+    width: 30px;
+}
+.footer-section .dev{
+    /* min-height: 10vh; */
+    width: 100%;
+    padding:0 7%;
+    background:var(--l-blu);
+}
+
+
+@media screen and (max-width:900px){
+    
+    .footer-section .company{
+        display:block
+    }
+    .footer-section .company .div{
+        width:100%;
+    }
+}
+@media screen and (min-width:540px) and (max-width:1200px){
+    .dev section{
+        margin-top:0;
+        display:none;
+    }
+    /* .blog-post{
+        text-align: center;
+        display:none;
+    }
+    .blog-post .div{
+        width: 220px;
+        display: inline-block;
+    } */
+}
+@media screen and (min-width:540px){
+    .mlink{
+        display: none;
+    }
+    
+}
